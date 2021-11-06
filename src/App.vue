@@ -1,5 +1,14 @@
-<template></template>
+<template>
+  <div>
+    <active-user></active-user>
+    <user-data></user-data>
+  </div>
+</template>
 
 <script>
-export default {};
+import ActiveUser from "./components/ActiveUser.vue";
+import UserData from "./components/UserData.vue";
+export default {
+  components: { ActiveUser, UserData },
+};
 </script>
