@@ -1,7 +1,7 @@
 <template>
   <div>
     <active-user :username="user.name" :age="user.age"></active-user>
-    <user-data></user-data>
+    <user-data @set-data="setUserData"></user-data>
   </div>
 </template>
 
@@ -16,6 +16,14 @@ export default {
         age: 37,
       },
     };
+  },
+  methods: {
+    setUserData(name, age) {
+      this.user = {
+        name: name,
+        age: age,
+      };
+    },
   },
 };
 </script>
