@@ -1,6 +1,6 @@
 <template>
   <div>
-    <active-user></active-user>
+    <active-user :username="user.name" :age="user.age"></active-user>
     <user-data></user-data>
   </div>
 </template>
