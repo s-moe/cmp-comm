@@ -1,13 +1,13 @@
 <template>
   <section>
-    <h2>Name of User</h2>
-    <h3>37 years</h3>
+    <h2>{{ username }}</h2>
+    <h3>{{ age }}</h3>
   </section>
 </template>
 <script>
 export default {
   props: {
-    name: {
+    username: {
       type: String,
       required: true,
     },
