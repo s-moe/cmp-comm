@@ -9,7 +9,14 @@
 import ActiveUser from "./components/ActiveUser.vue";
 import UserData from "./components/UserData.vue";
 export default {
-  components: { ActiveUser, UserData },
+  data() {
+    return {
+      user: {
+        name: "Sarah Moe",
+        age: 37,
+      },
+    };
+  },
 };
 </script>
 <style>
@@ -21,6 +28,6 @@ section {
   max-width: 40rem;
   border-radius: 12px;
   border: 1px solid #ccc;
-  padding: 2px;
+  padding: 10px;
 }
 </style>

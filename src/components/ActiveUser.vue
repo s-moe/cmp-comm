@@ -5,7 +5,18 @@
   </section>
 </template>
 <script>
-export default {};
+export default {
+  props: {
+    username: {
+      type: String,
+      required: true,
+    },
+    age: {
+      type: Number,
+      required: true,
+    },
+  },
+};
 </script>
 <style>
 section {
